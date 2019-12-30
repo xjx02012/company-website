@@ -1,25 +1,72 @@
 
- .about{
-    ul {
-        width: 100%;
-        height: 60px;
-        margin: 75px 0 0 0;
-      }
 
-      li {
-        list-style: none;
-        float: left;
-        width:33%;
-        height: 60px;
-        line-height: 60px;
-        text-align: center;
-        font-size: 20px;
-        color: #3e9ac8;
-        background: #ffffff;
-        border-bottom: 1px solid #3e9ac8;
-      }
+.tab-box {
+  width: 100%;
+  height: 60px;
+  padding: 0;
+}
 
-      ul a {
-        text-decoration: none;     
-       }
- }
+.tab {
+  list-style: none;
+  float: left;
+  width: 33%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 20px;
+  color: #3e9ac8;
+  border-bottom: 1px solid #3e9ac8;
+}
+
+.react-tabs__tab--selected {
+  text-decoration: none;
+  background: #3e9ac8;
+  color: #ffffff;
+  width: 33%;
+  height: 60px;
+}
+
+.summary {
+  list-style: none;
+  height: auto;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+.fl {
+  float: left;
+}
+
+.info {
+  width: 50%;
+  height: 100%;
+}
+
+.txt{
+  width: 100%;
+    font-size: 20px;
+    text-indent: 2em;
+    color: rgba(30, 42, 54, 0.6);
+    line-height: 100%;
+    margin: .21rem 0 0 0;
+    text-align: justify;
+}
+
+.pic{
+  width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.clear{
+  clear: both;
+}
+
+.clearfix:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
