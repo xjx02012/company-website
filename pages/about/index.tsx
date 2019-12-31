@@ -1,13 +1,17 @@
 import * as React from 'react'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import Layout from '../../components/Layout'
 import '../../styles/theme/about.scss'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
+
+
+
+
 const AboutPage: React.FunctionComponent = () => (
   <Layout title="About | Next.js + TypeScript Example" >
-    <div className="vh-100 ">
+    <div className="min-vh-100 ">
 
       <img className="img-fluid" src={`/images/banner/dabbyTeam.png`} />
       <div className="container-xl">
@@ -20,10 +24,10 @@ const AboutPage: React.FunctionComponent = () => (
             </TabList>
 
             <TabPanel>
-                {/* 团队简介 */}
+              {/* 团队简介 */}
               <Row className='summary'>
-                <Col className='fl info'>
-                <h3>简介</h3>
+                <Col md={6}>
+                  <h3>简介</h3>
                   <h4>BRIEF INTRODUCTION</h4>
                   <p className='txt'>
                     广州大白互联网科技有限公司创设于2015年5月12日，
@@ -34,11 +38,24 @@ const AboutPage: React.FunctionComponent = () => (
                     为公共服务供应方与行业应用提供多方位的基础支持，助推用户激发业务发展新动力。
                     </p>
                 </Col>
-                <Col className='fl pic'>
-                <img src={`/images/about/dabbyPic.png`} alt='图片加载失败' />
+                <Col md={6}>
+                  <img className='img-fluid' src={`/images/about/dabbyPic.png`} alt='图片加载失败' />
                 </Col>
-                <div className='clear'></div>
-              </Row>               
+              </Row>
+              {/* 公司理念 */}
+              <div className='team'>
+                <div className="title">
+                  <i className="title-line"></i>
+                  <span>公司理念</span>
+                  <i className="title-line"></i>
+                </div>
+                <p className="title-en">COMPANY CONCEPTS</p>
+                
+                  <div className='discountlcon'>
+                    111
+                  </div>
+                            
+                </div>
             </TabPanel>
             <TabPanel>
               <h2>Any content 2</h2>
@@ -47,7 +64,7 @@ const AboutPage: React.FunctionComponent = () => (
               <h2>Any content 3</h2>
             </TabPanel>
           </Tabs>
- 
+
         </div>
       </div>
     </div>
