@@ -1,5 +1,15 @@
 
 
+
+
+.wrapper {
+  padding-top: .3rem;
+  background: #ffffff;
+  width: 97%;
+  margin: 0 auto;
+}
+
+
 .tab-box {
   width: 100%;
   height: 60px;
@@ -26,6 +36,9 @@
   height: 60px;
 }
 
+/* 团队简介 */
+
+
 .summary {
   list-style: none;
   height: auto;
@@ -36,50 +49,150 @@
 
 
 
-
-
-.txt{
+.txt {
   width: 100%;
-    font-size: 20px;
-    text-indent: 2em;
-    color: rgba(30, 42, 54, 0.6);
-    line-height: 100%;
-    margin: .21rem 0 0 0;
-    text-align: justify;
+  font-size: 20px;
+  text-indent: 2em;
+  color: rgba(30, 42, 54, 0.6);
+  line-height: 100%;
+  margin: .21rem 0 0 0;
+  text-align: justify;
 }
 
 
-.title{
+.title {
   text-align: center;
-    font-size: 1.5rem;
-    margin: auto;
+  font-size: 1.5rem;
+  margin: auto;
 }
 
-.title-line{
+.title-line {
   display: inline-block;
-    width: 34px;
-    height: .03rem;
-    vertical-align: middle;
-    background: #3e9ac8;
+  width: 34px;
+  height: 0.38rem;
+  vertical-align: middle;
+  background: #3e9ac8;
 }
 
-.title-en{
+.title-en {
   font-size: .16rem;
-    color: rgba(30, 42, 54, 0.6);
-    text-align: center;
-    margin: .10rem 0 .4rem 0;
-    letter-spacing: 2px;
+  color: rgba(30, 42, 54, 0.6);
+  text-align: center;
+  margin: .10rem 0 .4rem 0;
+  letter-spacing: 2px;
 }
 
-.discountlcon{
+.discountlcon {
   width: 100%;
-    height: 4rem;
-    font-size: .18rem;
-    color: #fefeff;
-    padding: 1.24rem 1.70rem;
-    background-image: url(../../public/images/about/concept.png);
-    text-align: justify;
+  font-size: 1rem;
+  color: #fefeff;
+  background-image: url('/images/about/concept.png');
+  background-repeat: no-repeat;
+  text-align: justify;
+}
+
+/* 工作环境 */
+
+
+.mascot-line {
+  width: 2rem;
+  height: 0.38rem;
+  border-bottom: .26rem solid #EBEDF5;
+  margin: 1rem 1.5rem 0;
+
+}
+
+.name-en {
+  font-size: 3rem;
+  margin: 1.7rem 1.5rem 0;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.name {
+  font-size: 1.5rem;
+  margin: 0 1.5rem 0;
 }
 
 
 
+.addr {
+  font-size: 1rem;
+  color: rgba(30, 42, 54, 0.6);
+  line-height: 2.4rem;
+  margin-top: 1.4rem;
+  padding-bottom: 1.3rem;
+}
+
+/* 加入我们 */
+.join-logo{
+  width: 85px;
+    height: 140px;
+    margin: 38px 85px 41px;
+  background: url(/images/about/join-logo.png);
+  background-repeat: no-repeat;
+}
+
+.tags{
+  padding: 1.38rem 0;
+  text-align: center;
+  border-top: 1px solid #F1F1F4;
+    border-bottom: 1px solid #F1F1F4;
+}
+
+.tag{
+  font-size: .35rem;
+    border: 1px solid #e5e6e9;
+    -webkit-border-radius: 1.15rem;
+    -moz-border-radius: 1.15rem;
+    -ms-border-radius: 1.15rem;
+    -o-border-radius: 1.15rem;
+    border-radius: 1.15rem;
+    padding: .25rem .55rem;
+    margin-bottom: 0.55rem;
+    color: rgba(30, 42, 54, 0.6);
+    display: inline-block;
+}
+
+.eamill{
+  text-align: center;
+    font-size: .66rem;
+    line-height: 5rem;
+    color: #3e9ac8;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.info-top{
+  padding: 30px 38px 60px;
+    background: #ffffff;
+}
+
+.job-name{
+  font-size: 2rem;
+    font-weight: bold;
+    color: rgba(30, 42, 54, 0.8);
+    margin: 0 0 .50rem 0;
+}
+
+
+.salary {
+  font-size: 1.3rem;
+  color: #42c9b1;
+}
+
+.experience {
+  font-size: 16px;
+  color: rgba(30, 42, 54, 0.6);
+  margin: 0 0 0 24px;
+}
+
+.join-btn{
+  border: none;
+}
+
+.btn-primary {
+  background-color: #3e9ac8;
+  border:none;
+}
