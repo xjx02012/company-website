@@ -8,6 +8,8 @@ import Container from 'react-bootstrap/Container'
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import { fun1 } from '../about/map'
+<script type="text/babel"  src="http://api.map.baidu.com/api?v=3.0&ak=NeNEy66Cv0crzs3ktX7dLMgzzOfhZugv"></script>
 
 
 
@@ -139,12 +141,23 @@ const AboutPage: React.FunctionComponent = () => (
                 <div className='COMPANY'>
 
                   {/* 地理位置 */}
+
                   <div className="title">
                     <i className="title-line"></i>
                     <span>地理位置</span>
                     <i className="title-line"></i>
                   </div>
                   <p className="title-en">GEOGRAPHIC LOCATION</p>
+                  <div style={{width:"100%",height:"500px"}}>
+                  <div id="container">
+                  componentDidMount() {//生命钩子，组件被挂在后调用
+
+                    fun1()
+
+                  }
+</div>
+</div>
+
 
                   {/* 联系方式 */}
                   <div className="title">
@@ -202,11 +215,11 @@ const AboutPage: React.FunctionComponent = () => (
                         <span className="experience">本科</span>
                         <Accordion>
                           <Card className="join-btn">
-                            <Card.Header style={{ background:"none"}}>
+                            <Card.Header style={{ background: "none" }}>
                               <Accordion.Toggle as={Button} variant="primary" eventKey="0">
                                 展开
                         </Accordion.Toggle>
-                        
+
                             </Card.Header>
                             <Accordion.Collapse eventKey="0">
                               <Card.Body>Hello! I'm the body</Card.Body>
